@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,13 +7,18 @@ body {
 
 /* Header */
 .header {
-    background-color: #4a90e2;
+    background-image: url('https://storage.googleapis.com/deploy_aplikasi_profile/photo/header.jpg');
+    background-size: cover;
+    /* Cover the entire header */
+    background-position: center;
+    /* Center the background image */
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 100px 0;
+    /* Adjust padding for better spacing */
 }
 
-
+/* Profile Section */
 .profile-section {
     background-color: #333;
     color: white;
@@ -41,7 +45,7 @@ body {
     font-size: 1em;
 }
 
-
+/* Content */
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +58,10 @@ body {
 .personal-info {
     width: 45%;
     min-width: 300px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .story h3,
@@ -68,7 +76,7 @@ body {
     font-weight: 500;
 }
 
-
+/* Social Media */
 .social-media {
     text-align: center;
     margin: 20px 0;
@@ -86,25 +94,22 @@ body {
 
 .icons a {
     text-decoration: none;
-    color: black;
 }
 
-.icons .material-icons {
-    font-size: 40px;
-    transition: transform 0.3s;
-}
-
-.icons .material-icons:hover {
-    transform: scale(1.1);
-}
 .icons i {
     font-size: 40px;
-    margin: 0 10px;
-    color: black;
+    /* Uniform icon size */
     transition: transform 0.3s;
 }
 
-.icons i:hover {
+.icons img {
+    width: 40px;
+    /* Ensure icons are uniform in size */
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.icons i:hover,
+.icons img:hover {
     transform: scale(1.1);
-    color: #4a90e2;
 }
